@@ -23,13 +23,14 @@ public class Switcher {
         }
 
         String animal = "dog";
+        animal="wolf";
 
         String sound = switch (animal) {
             case "cat" -> {
                 System.out.println("I am a cat");
                 yield "meow";
             }
-            case "dog" -> {
+            case "dog","wolf" -> {
                 System.out.println("I am a dog");
                 yield "bark";
             }
